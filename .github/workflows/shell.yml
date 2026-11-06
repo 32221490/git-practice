@@ -10,7 +10,6 @@ jobs:
           pwd
           echo "File list:"
           ls -la
-    steps:
       - name: Check file
         run: |
           if [ -f "README.md" ]; then
