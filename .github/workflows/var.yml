@@ -2,7 +2,7 @@ name: Variable Example
 on: workflow_dispatch
 jobs:
   variable-test:
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
 
     env:
       MESSAGE: Hello GitHub
