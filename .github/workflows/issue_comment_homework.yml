@@ -19,7 +19,7 @@ jobs:
       PUSHER: ${{ github.event.pusher.name }}
       REF_NAME: ${{ github.ref_name }}
       COMPARE_URL: ${{ github.event.compare }}
-      COMMIT_IDS: ${{ join(github.event.commits.*id, ' ') }}
+      COMMIT_IDS: ${{ join(github.event.commits.*.id, ' ') }}
 
     steps:
       - name: Build issue title/body
